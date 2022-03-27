@@ -18,12 +18,12 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className='nav-item'>
-                                <Link  href='about'>
+                                <Link  href='/about'>
                                     <a className='nav-link'> Proyecto</a>
                                 </Link>   
                             </li>
                             <li className='nav-item'>
-                            <Link  href='random'>
+                            <Link  href='/random'>
                                     <a className='nav-link'> Random</a>
                                 </Link>
                             </li> 
