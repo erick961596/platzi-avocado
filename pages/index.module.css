@@ -1,0 +1,13 @@
+.card_avocado{
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    margin: 10px;
+}
+.description{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+   
+}
