@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 
 import styles from "./index.module.css";
-import AvocadoItem from '@components/avocadoItem/avocadoItem';
+import AvocadoItem from '../components/avocadoItem/avocadoItem';
 
 const index = () => {
 
