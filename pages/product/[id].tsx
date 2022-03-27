@@ -22,7 +22,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 // This also gets called at build time
 export const getStaticProps: GetStaticProps = async ({params}) => {
-  console.log(params.id);
+  //console.log(params.id);
 
         const res = await fetch(`https://platzi-avo.vercel.app/api/avo/${params?.id}`);
         const product = await res.json();
