@@ -11,8 +11,10 @@ const getAVO = async(request:NextApiRequest, response:NextApiResponse) => {
 
     const id = request.query.id;
 
+    const idString = id.toString();
 
-    const entry = await db.getById(id);
+
+    const entry = await db.getById(idString);
 
     // response.statusCode = 200;
     // response.setHeader('Content-Type', 'application/json');

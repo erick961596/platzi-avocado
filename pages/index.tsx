@@ -6,7 +6,7 @@ import AvocadoItem from '@components/avocadoItem/avocadoItem';
 
 const index = () => {
 
-    const [productList, setproductList] = useState<TProduct[]>([]);
+    const [productList, setproductList] = useState<any[]>([]);
 
     useEffect(() => {
         window.fetch('/api/avo')

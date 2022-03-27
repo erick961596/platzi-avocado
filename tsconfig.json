@@ -30,7 +30,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "context/AppContext.js", "initialState.js"  ],
+, "context/AppContext.tsx", "initialState.js"  ],
   "exclude": [
     "node_modules"
   ]

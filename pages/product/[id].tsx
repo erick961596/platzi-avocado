@@ -30,7 +30,7 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
 
 }
 
-const ProductItem = ( {product }:{product:Tproduct} ) => {
+const ProductItem = ( {product }:{product:any} ) => {
 
     return (
         <div>

@@ -5,7 +5,7 @@ import {AppContext } from 'context/AppContext';
 
 const AvocadoItem = ({productList}) => {
 
-    const { addToCart, removeFromCart, state } = useContext(AppContext);
+    const { removeFromCart, state, addToCart } = useContext(AppContext);
 
     const handdledAddToCart = (product) =>()=> {
         addToCart(product);

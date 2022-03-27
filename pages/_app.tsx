@@ -6,7 +6,8 @@ import '@assets/css/style.css'
 
 
 import AppProvider from "../context/AppContext";
-
+// add bootstrap css 
+import 'bootstrap/dist/css/bootstrap.css'
 function MyApp({ Component, pageProps }) {
     return (
       <AppProvider>

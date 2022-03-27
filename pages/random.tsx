@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AvocadoItem from '@components/avocadoItem/avocadoItem';
 const random = () => {
 
-    const [productList, setproductList] = useState<TProduct[]>([]);
+    const [productList, setproductList] = useState<any[]>([]);
     const [inputRandomQuantity , setInputRandomQuantity] = useState<number>(2);
     
     // useEffect(() => {

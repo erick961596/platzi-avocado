@@ -8,8 +8,9 @@ const [state, setState] = useState(initialState);
 
 
 
-const addToCart = (product: TProduct, quantity?=1) => {
+const addToCart = (product: any, quantity?) => {
 
+    quantity = quantity ? quantity : 1;
     if (state.cart.find(prod => prod.id === product.id)) {
         setState({
             ...state,
@@ -38,7 +39,7 @@ const addToCart = (product: TProduct, quantity?=1) => {
     // })
 }
 
-const removeFromCart = (product: TProduct) => {
+const removeFromCart = (product: any) => {
     setState({
         ...state,
         cart: state.cart.filter(p => p.id !== product.id)
