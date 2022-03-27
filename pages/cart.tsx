@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { AppContext } from 'context/AppContext';
 const cart = () => {
 
-    const { addToCart, removeFromCart, state } = useContext(AppContext);
+    const { addToCart, removeFromCart, state } = useContext<any | null>(AppContext);
 
     const { cart, quantity } = state;
     return (

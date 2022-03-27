@@ -2,11 +2,16 @@
 import { createContext, useContext } from 'react';
 import useInitialState from '../hooks/useInitialState';
 
-export const AppContext = createContext();
+export const AppContext = createContext( 
+  {
+    state: {},
+    
+  }
+);
 
 
  const AppProvider =({ children }) =>{
-  const initialState = useInitialState()
+  const initialState = useInitialState(   )
 
   return (
     <AppContext.Provider value={initialState}>

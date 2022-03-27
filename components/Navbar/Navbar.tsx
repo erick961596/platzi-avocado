@@ -5,7 +5,7 @@ import React, { useContext, useEffect } from 'react';
 import {AppContext } from 'context/AppContext';
 import { totalmem } from 'os';
 const Navbar = () => {
-    const { addToCart, removeFromCart, state } = useContext(AppContext);
+    const { addToCart, removeFromCart, state } = useContext<any | null>(AppContext);
   
      const {cart}  = state;
 

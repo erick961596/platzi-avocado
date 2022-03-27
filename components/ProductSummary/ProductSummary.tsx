@@ -4,9 +4,9 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from 'context/AppContext';
 
 const ProductSummary = ({product}) => {
-    const {name, price, image, attributes} = product.data;
+    const {name, price, image, attributes} = product;
 
-    const { addToCart, removeFromCart, state } = useContext(AppContext);
+    const { addToCart, removeFromCart, state } = useContext<any | null>(AppContext);
     const [quantity, setQuantity] = useState<any | null>(1);
     
     const handdledAddToCart = (product, quantity) =>()=> {
@@ -28,7 +28,7 @@ const ProductSummary = ({product}) => {
                             <span className='badge bg-secondary'>{price}</span>
                             
                                 <input type="number" name="quantity" id="quantity" value={quantity} onChange={ event=> setQuantity(event.target.value)} />
-                                <button className='btn btn-primary' onClick={ handdledAddToCart(product.data, quantity) } >Add to Cart</button>
+                                <button className='btn btn-primary' onClick={ handdledAddToCart(product, quantity) } >Add to Cart</button>
                            
                         </div>
                     </div>

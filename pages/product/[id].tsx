@@ -7,8 +7,8 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import ProductSummary from '@components/ProductSummary/ProductSummary';
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const response = await fetch(`http://localhost:3000/api/avo`)
-    const { data }: TAPIAvoResponse = await response.json()
+    const response = await fetch(`https://platzi-avo.vercel.app/api/avo/`)
+    const { data }: any = await response.json()
     const paths = data.map( ({ id }) => ( { params: { id } } ) )
   
     return {
@@ -22,8 +22,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 // This also gets called at build time
 export const getStaticProps: GetStaticProps = async ({params}) => {
+  console.log(params.id);
 
-        const res = await fetch(`http://localhost:3000/api/avo/${params?.id}`);
+        const res = await fetch(`https://platzi-avo.vercel.app/api/avo/${params?.id}`);
         const product = await res.json();
           // Pass post data to the page via props
         return { props: { product } }

@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <p>&copy; 2020 Avocados. All rights reserved.</p>
+                        <p>&copy; 2022 Avocados. All rights reserved.</p>
                     </div>
                     <div className="col-md-6 d-flex justify-content-end">
                        

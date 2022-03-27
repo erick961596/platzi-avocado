@@ -3,7 +3,7 @@ import AvocadoItem from '@components/avocadoItem/avocadoItem';
 const random = () => {
 
     const [productList, setproductList] = useState<any[]>([]);
-    const [inputRandomQuantity , setInputRandomQuantity] = useState<number>(2);
+    const [inputRandomQuantity , setInputRandomQuantity] = useState<any |null>(2);
     
     // useEffect(() => {
     //     fetch('/api/avo/getCompareTwoProducts?quantity='+inputRandomQuantity)
