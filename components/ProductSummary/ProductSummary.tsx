@@ -7,7 +7,7 @@ const ProductSummary = ({product}) => {
     const {name, price, image, attributes} = product.data;
 
     const { addToCart, removeFromCart, state } = useContext(AppContext);
-    const [quantity, setQuantity]:Number = useState(1);
+    const [quantity, setQuantity] = useState(1);
     
     const handdledAddToCart = (product, quantity) =>()=> {
         const parseQuantity = parseInt(quantity);
