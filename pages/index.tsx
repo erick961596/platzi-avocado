@@ -4,17 +4,17 @@ import React, {useEffect, useState} from 'react';
 import styles from "./index.module.css";
 import AvocadoItem from '@components/avocadoItem';
 
-const index = () => {
+function index() {
 
     const [productList, setproductList] = useState<any[]>([]);
 
     useEffect(() => {
         window.fetch('/api/avo')
             .then(res => res.json())
-            .then(({data, length}) => {
+            .then(({ data, length }) => {
                 setproductList(data);
-                 console.log(data);
-            })
+                console.log(data);
+            });
     }, []);
     return (
         <div className='p-lg-5 p-3'>
@@ -23,12 +23,12 @@ const index = () => {
                 <div className="row">
                     <div className="col-12">
 
-                <AvocadoItem productList={productList} />
+                        <AvocadoItem productList={productList} />
                     </div>
-                </div>   
+                </div>
             </div>
-            
-            
+
+
         </div>
     );
 }

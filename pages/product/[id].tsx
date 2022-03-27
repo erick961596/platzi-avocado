@@ -31,13 +31,13 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
 
 }
 
-const ProductItem = ( {product }:{product:any} ) => {
+function ProductItem({ product }: { product: any; }) {
 
-    return (
-        <div>
-        {product == null ? null : <ProductSummary product={product} />}
-        </div>
-    );
+  return (
+    <div>
+      {product == null ? null : <ProductSummary product={product} />}
+    </div>
+  );
 }
 
 export default ProductItem;
