@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import AvocadoItem from '@components/avocadoItem/avocadoItem';
+import AvocadoItem from '@components/avocadoItem';
 const random = () => {
 
     const [productList, setproductList] = useState<any[]>([]);
